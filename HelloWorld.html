@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUVIONTECH | Electrolytic Marking Solutions</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ====== GLOBAL STYLES ====== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #222;
+      background-color: #f9f9f9;
+    }
+
+    /* ====== HEADER ====== */
+    header {
+      background: #003366;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start; /* move items toward top */
+      padding: 10px 40px 5px 40px;
+      position: relative;
+    }
+
+    /* brand section */
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      overflow: hidden;
+    }
+
+    .brand-logo {
+      height: 60px;
+      width: auto;
+      border-radius: 5px;
+    }
+
+    /* marquee text */
+    .marquee-text {
+      display: inline-block;
+      white-space: nowrap;
+      animation: marquee 15s linear infinite;
+      font-size: 22px;
+      color: #0d6efd;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    /* nav bar */
+    nav {
+      margin-top: 5px; /* pushes nav near top */
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 17px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* ====== HERO SECTION ====== */
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #ff9900;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    /* ====== PRODUCTS SECTION ====== */
+    #products {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .product img {
+      width: 250px;
+      height: 250px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin: auto;
+      display: block;
+    }
+
+    .product h3 {
+      color: #003366;
+    }
+
+    /* ====== SERVICES SECTION ====== */
+    #services {
+      background: #eef3f8;
+      padding: 40px 20px;
+    }
+
+    #services ul {
+      list-style: square;
+      text-align: left;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    /* ====== CONTACT SECTION ====== */
+    #contact {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 10px;
+      background: #003366;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* ====== FOOTER ====== */
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER SECTION ===== -->
+  <header>
+    <div class="brand">
+      <img src="download.png" alt="Suviontech Logo" class="brand-logo" />
+      <h2 class="marquee-text">Welcome to Suviontech</h2>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="Product_Page.html">Products</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="Contect_page.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <img src="pexels-alscre-2847648.jpg" alt="Marking Machine Banner" class="hero-img" />
+    <div class="hero-text">
+      <h1>Electrolytic Marking Machines & Chemicals</h1>
+      <p>Permanent Metal Marking Solutions by Suviontech</p>
+      <a href="#contact" class="btn">Get Quote</a>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="WhatsApp Image 2025-10-29 at 21.44.39_93d2bf7e.jpg" alt="Electrolytic Marking Machine" />
+        <h3>Electrolytic Marking Machine</h3>
+        <p>High precision, durable marking on steel and metal surfaces.</p>
+      </div>
+      <div class="product">
+        <img src="Sticker pic.jpg" alt="Electrolytic Marking Chemical" />
+        <h3>Marking Chemicals</h3>
+        <p>Specially formulated marking electrolytes for different metals.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Metal & Stainless Steel Electrolytic Marking</li>
+      <li>Machine Manufacturing & Custom Branding</li>
+      <li>Industrial Marking Solutions</li>
+    </ul>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:info@suviontech.com">info@suviontech.com</a></p>
+    <p>Phone: +91-7870760328</p>
+    <p>Address: Swaroop Nagar, Delhi, India</p>
+
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Suviontech. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
